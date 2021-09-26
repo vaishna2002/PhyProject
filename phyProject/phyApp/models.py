@@ -17,7 +17,7 @@ class Video_Project(models.Model):
     project_name = models.CharField(max_length=200)
     author_name = models.CharField(max_length=200)
     youtube_link = models.CharField(max_length=1000)
-    image = models.CharField(max_length=1000)
+    image = models.ImageField(upload_to='images' , null=True)
 
 
     def __str__(self):
